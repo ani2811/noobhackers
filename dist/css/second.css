@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Rubik:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+}
+nav{
+    display: flex;
+    padding: 0% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 115px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 2% 28px;
+    position: relative;
+    right: 59px;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+body{
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+    height: 100vh;
+}
+.icons-size{
+    color: #333;
+    font-size: 14px;
+}
+.action{
+    position: fixed;
+    right: 20px;
+    top:24px
+}
+.action .profile{
+    border-radius: 50%;
+    cursor: pointer;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    width: 60px;
+}
+.action .profile img{
+    width: 100%;
+    top:0;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    height: 100%;
+}
+.action .menu{
+    background-color:#FFF;
+    box-sizing:0 5px 25px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    padding: 10px 20px;
+    position: absolute;
+    right: -10px;
+    width: 200px;
+    transition: 0.5s;
+    top: 120px;
+    visibility: hidden;
+    opacity: 0;
+}
+.action .menu.active{
+    opacity: 1;
+    top: 80px;
+    visibility: visible;
+}
+.action .menu::before{
+    background-color:#fff;
+    content: '';
+    height: 20px;
+    position: absolute;
+    right: 30px;
+    transform:rotate(45deg);
+    top:-5px;
+    width: 20px;
+}
+.action .menu h3{
+    color: #555;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3em;
+    padding: 20px 0px;
+    text-align: left;
+    width: 100%;
+}
+.action .menu h3 div{
+    color: #818181;
+    font-size: 14px;
+    font-weight: 400;
+}
+.action .menu ul li{
+    align-items: center;
+    border-top:1px solid rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    padding: 10px 0px;
+}
+.action .menu ul li img{
+    max-width: 20px;
+    margin-right: 10px;
+    opacity: 0.5;
+    transition:0.5s
+}
+.action .menu ul li a{
+    display: inline-block;
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.action .menu ul li:hover img{
+    opacity: 1;
+}
+.btn{
+    position: relative;
+    bottom: 77px;
+    left: 40%;
+}
+.red-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:ivory;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 30px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.red-btn:hover{
+    border: 1px solid darkviolet;
+    background: darkviolet;
+    transition: 1s;
+}
+.homepage-content{
+    font-size: 2.2rem;
+    margin-left: 7vw;
+    padding-top: 19vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    color:darkviolet;
+}
+.test{
+    padding-bottom: 2vh;
+    font-size: 3.5rem;
+}
+
+.see{
+    padding-bottom: 2vh;
+    font-size: 3.5rem;
+}
+.stack{
+    padding-bottom: 2vh;
+    font-size: 3.5rem;
+}
+.qt{
+    font-size: 3.5rem;
+}
+.homepage{
+    height: 94vh;
+}
+
+.homepage-total{
+    display: flex;
+
+}
+.homepage-img{
+    width: 87vh;
+    height: 71vh;
+    position: relative;
+    right: 40px;
+    top: -19px;
+}
+.about-us{
+    height: 80vh;
+    display: flex;
+}
+
+.about-us-total{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.about-us-content{
+    width: 50%;
+    flex-direction: row-reverse;
+    font-size: 1.9rem;
+    padding-top: 16vh;
+    padding-right: 7vh;
+    font-family: 'Lato', sans-serif;
+    color:rebeccapurple;
+}
+
+.about-us-image{
+    width: 50%;
+    position: relative;
+    top: -91px
+}
+
+.about-us-img{
+    width: 65vh;
+    height: 60vh;
+    padding-top: 11vh;
+    padding-left: 8vh;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 27px;
+    padding: 10px;    
+}
+.icons .fab{
+    color: salmon;
+    margin: 0 13px;
+    cursor: pointer;
+    padding:18px 0;
+}
+.action .menu ul li:hover a{
+    color:red;
+}

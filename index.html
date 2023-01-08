@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Welcome | QT</title>
+     <link rel="icon" href="QT-removebg-preview.png">
+     <link rel="stylesheet" href="dist/css/second.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+ </head> 
+ <body>
+    <section class="header">
+        <nav>
+            <img src="QT-removebg-preview.png">
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                </ul>
+            </div>
+            <div class="action">
+                <div class="profile" onclick="menuToggle();">
+                    <img src="user.png" alt="">
+                </div>
+       
+                <div class="menu">
+                    <h3>
+                        Dashboard
+                    </h3>
+                    <ul>
+                        <li>
+                            <span class="material-icons icons-size">person</span>
+                            <h3>My Profile: <span class="name"></span></h3>
+                        </li>
+                        <li>
+                           <span class="material-symbols-rounded">
+                               hotel_class
+                               </span>
+                           <h3>My Points: <span class="points"></span></h3>
+                       </li>
+                       <li>
+                        <h3><a href="start.html">Log Out</a></h3>
+                    </li>
+       
+                    </ul>
+                </div>
+            </div>
+            </nav>
+            <section class="homepage" id="home">
+                <div class="homepage-total">
+                    <div class="homepage-content">
+                        <span class="test">Test your knowledge</span>
+                        <span class="see">and see how you</span>
+                        <span class="stack">stack up against</span>
+                        <span class="qt">the competition!</span>
+                    </div>
+                    <div class="homepage-image"><img src="7361950-removebg-preview.png" alt="" class="homepage-img"> </div>
+                </div>
+            </section>
+
+    <section class="about-us" id="about">
+        <div class="about-us-total">
+            <div class="about-us-content">
+                <p>Welcome to QT-  We are a Knowledge Based Quiz Site covering a wide range of intellectually challenging Questions. We can help you learn a subject and improve your knowledge of it. We know our quiz will challenge you, so keep learning and expanding your knowledge!
+                </p>
+            </div>
+            <div class="about-us-image"><img src="5197176-removebg-preview (1).png" alt="" class="about-us-img"></div>
+        </div>
+    </section>
+            <section>
+                <div class="btn">
+               <a href="start.html" class="red-btn">START THE QUIZ</a></div>
+               </section>
+             <section class="footer">
+                <h3>About Us</h3>
+                <p>QT Website<br>
+                    Team NoobHackers, HackNITR 4.0
+                    <br>NIT Rourkela, Pin-769008</p>
+                    <div class="icons">
+                       <a href="https://www.linkedin.com/company/hacknitr/?originalSubdomain=in"> <i class="fab fa-linkedin"></i></a>
+                       <a href="https://www.instagram.com/hacknitr/?hl=en"> <i class="fab fa-instagram"> </i> </a>
+                        <a href="https://www.facebook.com/hacknitr/"> <i class="fab fa-facebook"> </i></a>
+                        <a href="https://twitter.com/hacknitr?lang=en"> <i class="fab fa-twitter"></i> </a>
+                    </div>
+            </section>
+               
+     <script>
+         function menuToggle(){
+             const toggleMenu = document.querySelector('.menu');
+             toggleMenu.classList.toggle('active')
+         }
+        
+     </script>
+     <script src="dist/js/userInfo.js"></script>
+ </body>
+ </html>
